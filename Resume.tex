@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.65in]{geometry}
+\usepackage{times}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{
+    leftmargin=0.20in,
+    itemsep=0pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+\renewcommand{\labelitemi}{\raisebox{0.25ex}{\tiny$\blacksquare$}}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.35em}\rule{\textwidth}{1pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\resumeEntry}[3]{
+    \textbf{#1}\hfill\textbf{#2}\\
+    #3
+}
+
+\begin{document}
+
+\begin{center}
+    {\Large\textbf{Aiden Buter}}\\[0.35em]
+    (913) 387-8498 \textbar \ aiden.buter@gmail.com \textbar \  linkedin.com/in/aiden-buter \textbar \  github.com/ajbuter
+\end{center}
+
+\section*{Education}
+
+\resumeEntry{Missouri University of Science \& Technology}{Dec 2028}{
+B.S. Computer Science \hfill\\
+}
+\resumeEntry{Heritage Christian Academy High School}{May 2025}{
+H.S. Diploma
+}
+
+\vspace{0.2em}
+
+\section*{Experience}
+
+\resumeEntry{Mars Rover Design Team - Software Team Member}{Aug 2025 - Present}{}
+\begin{itemize}
+    \item[$\bullet$] Implemented closed loop velocity speed control using custom written PID algorithm to integrate motor drive boards with autonomous navigation stacks.
+    \item[$\bullet$] Engineered a dynamic variable drive speed system using IMU and LiDAR telemetry to detect abnormal rover positioning, automatically throttling velocity to prevent catastrophic failure. 
+    \item[$\bullet$] Designed LiDAR path planning and image recognition to avoid abnormal or untraversable terrain. 
+    \item[$\bullet$] Collaborated with multidisciplinary engineering sub-teams to build new drive systems and integrate real-time sensor feedback into autonomous planning pipelines.
+    \item[$\bullet$] Adapting the autonomous navigation pipeline to support swerve drive system off of a tank drive system by updating path following algorithms and motion profiles to leverage omnidirectional movement and zero radius turning capabilities. 
+    
+\end{itemize}
+
+\resumeEntry{Missouri S&T Athletics - Athletics Media Assistant}{Aug 2025 - Present}{}
+\begin{itemize}
+    \item[$\bullet$] Capture professional sports and event photography and dynamic video coverage for NCAA collegiate athletic events working under high pressure, fast paced game environments.
+    \item[$\bullet$] Coordinates with Athletics Communications Director, teach coaching staff, athletes, and media personnel to satisfy department needs and deadlines.
+\end{itemize}
+\vspace{0.2em}
+
+\section*{Technical Projects}
+
+\resumeEntry{Automated Image Processor for Instagram}{Python, Pillow (PIL),Tkinter}
+\begin{itemize}
+    \item[$\bullet$] Engineered a Python image processing tool that automates image reframing and padding to fit required template sizes without compromising quality.
+    \item[$\bullet$] Implemented a batch processing workflow using PIL to dramatically increase department turn around.
+    \item[$\bullet$] Designed an intuitive graphical interface for users to select directories, sort images, and export web compatible images seamlessly.
+\end{itemize}
+
+\vspace{0.2em}
+
+\resumeEntry{Photography Portfolio Web Application}{HTML, PHP, CSS, JavaScript}
+\begin{itemize}
+    \item[$\bullet$] Developed and deployed a responsive photography portfolio website showcasing athletics, portraits, and event media across all platforms.
+    \item[$\bullet$] Optimized image asset delivery and implemented loading techniques to maintain fast page load speeds and smooth gallery rendering.
+\end{itemize}
+
+\section*{SKILLS}
+
+Technical: Java, Python, C++, Fusion 360, Version Control, Adobe Products\\
+Interpersonal: Project Management, Leadership, Communication, Public Speaking, Teamwork, Organization
+
+\end{document}
