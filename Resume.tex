@@ -27,8 +27,10 @@
 \titlespacing*{\section}{0pt}{7pt}{3pt}
 
 \newcommand{\resumeEntry}[3]{
-    \textbf{#1}\hfill\textbf{#2}\\
-    #3
+    \textbf{#1}\hfill\textbf{#2}\\#3
+}
+\newcommand{\resumeEntryPersonal}[2]{
+    \textbf{#1}\hfill\textbf{#2}
 }
 
 \begin{document}
@@ -51,27 +53,30 @@ H.S. Diploma
 
 \section*{Experience}
 
-\resumeEntry{Mars Rover Design Team - Software Team Member}{Aug 2025 - Present}{}
+\resumeEntry{Mars Rover Design Team - Software Team Member}{Aug 2025 - Present}{Missouri University of Science \& Technology}
 \begin{itemize}
     \item[$\bullet$] Implemented closed loop velocity speed control using custom written PID algorithm to integrate motor drive boards with autonomous navigation stacks.
     \item[$\bullet$] Engineered a dynamic variable drive speed system using IMU and LiDAR telemetry to detect abnormal rover positioning, automatically throttling velocity to prevent catastrophic failure. 
     \item[$\bullet$] Designed LiDAR path planning and image recognition to avoid abnormal or untraversable terrain. 
     \item[$\bullet$] Collaborated with multidisciplinary engineering sub-teams to build new drive systems and integrate real-time sensor feedback into autonomous planning pipelines.
     \item[$\bullet$] Adapting previous year's tank drive system software to newly designed swerve drive system. 
-    \item[$\bullet$] Presented PDR and CDR to full team.
+    \item[$\bullet$] Presented Preliminary Design Review (PDR) and Critical Design Review (CDR) to full team.
 \end{itemize}
 
-\resumeEntry{Missouri S\&T Athletics - Athletics Media Assistant}{Aug 2025 - Present}{}
+\vspace{0.2em}
+
+\resumeEntry{Athletics Media Assistant}{Aug 2025 - Present}{Missouri University of Science \& Technology Athletics}
 \begin{itemize}
     \item[$\bullet$] Capture professional sports and event photography and dynamic video coverage for NCAA collegiate athletic events working under high pressure, fast paced game environments.
-    \item[$\bullet$] Coordinates with Athletics Communications Director, teach coaching staff, athletes, and media personnel to satisfy department needs and deadlines.
-    \item[$\bullet$] Utilized self developed web portfolio to distribute media across teams and staff members.
+    \item[$\bullet$] Coordinate with Athletics Communications Director, teach coaching staff, athletes, and media personnel to satisfy department needs and deadlines.
+    \item[$\bullet$] Utilized self developed web portfolio to distribute media across teams and staff members. See Photography Portfolio Web Application.
 \end{itemize}
+
 \vspace{0.2em}
 
 \section*{Personal Projects}
 
-\resumeEntry{Automated Image Processor for Instagram}{Python, Pillow (PIL), Tkinter}
+\resumeEntryPersonal{Automated Image Processor for Instagram}{Python, Pillow (PIL), Tkinter}
 \begin{itemize}
     \item[$\bullet$] Engineered a Python image processing tool that automates image reframing and padding to fit required template sizes without compromising quality.
     \item[$\bullet$] Implemented a batch processing workflow using PIL to dramatically increase department turn around.
@@ -80,7 +85,7 @@ H.S. Diploma
 
 \vspace{0.2em}
 
-\resumeEntry{Photography Portfolio Web Application}{HTML, PHP, CSS, JavaScript}
+\resumeEntryPersonal{Photography Portfolio Web Application}{HTML, PHP, CSS, JavaScript}
 \begin{itemize}
     \item[$\bullet$] Developed and deployed a responsive photography portfolio website showcasing athletics, portraits, and event media across all platforms.
     \item[$\bullet$] Optimized image asset delivery and implemented loading techniques to maintain fast page load speeds and smooth gallery rendering.
